@@ -35,7 +35,7 @@ public class TFLP1 {
     System.out.println("--------------------------------------\n");
 
     //teste 5
-    System.out.println("Instânciar t1: ");
+    System.out.println("Alterar t1: ");
     t1.setData();
     t1.setHora();
     t1.setValor();
