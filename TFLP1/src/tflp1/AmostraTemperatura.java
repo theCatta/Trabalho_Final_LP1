@@ -7,7 +7,7 @@ public class AmostraTemperatura{
   private Hora hora;
   private float valor;
 
- public AmostraTemperatura(int a, int b, int c, int d, int e, int f, float v){
+  public AmostraTemperatura(int a, int b, int c, int d, int e, int f, float v){
     this.data = new Data(a, b, c);
     this.hora = new Hora(d, e, f);
     
@@ -18,9 +18,9 @@ public class AmostraTemperatura{
     Scanner scan = new Scanner(System.in);
     float val;
     
-    this.hora = new Hora();
     this.data = new Data();
-
+    this.hora = new Hora();
+    
     System.out.print("Digite o valor da temperatura: ");
     val = scan.nextFloat();
 
@@ -32,7 +32,7 @@ public class AmostraTemperatura{
     this.hora = h;
     setValor(v);
   }
-
+  
   public void setData(int a, int b, int c){
     this.data = new Data(a, b, c);
   }
@@ -57,7 +57,7 @@ public class AmostraTemperatura{
   public void setValor(){
     Scanner scan = new Scanner(System.in);
     System.out.print("Digite o valor da temperatura: ");
-    this.valor = scan.nextInt();
+    this.valor = scan.nextFloat();
     
     this.numseq += 1;
   }
